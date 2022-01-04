@@ -1,0 +1,22 @@
+package com.revature;
+
+import java.util.ArrayList;
+
+public class Q1 {
+	
+	    public char[] sort(char[] numberList) {
+    	String s = new String(numberList);
+    	int i = 0;
+		do {
+			for (int j = i+1; j<s.length(); ++j) {
+				char currentElement = numberList[i];
+				if (numberList[i] > numberList[j]) {
+					numberList[i] = numberList[j];
+					numberList[j] = currentElement;
+				}
+			}
+		} while (i<s.length());
+		return numberList;
+    }
+	
+}

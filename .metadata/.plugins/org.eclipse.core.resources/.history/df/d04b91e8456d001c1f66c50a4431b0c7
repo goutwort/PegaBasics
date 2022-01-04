@@ -1,0 +1,23 @@
+package com.revature;
+
+public class Q2 {
+	
+	public int[] fibonacci(int length) {
+	
+		int[] numberList = new int[length];
+		
+		numberList[0] = 1;
+		numberList[1] = 2;
+		for (int i =0; i<length-2; ++i) {
+			numberList[i+2] = numberList[i] + numberList[i+1];
+		}
+		
+		String s = "";
+		
+		for (int i =0; i<length; ++i) {
+			s = s + "," + String.valueOf(numberList[i]);
+		}
+		
+		return numberList;
+	}
+}

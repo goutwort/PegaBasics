@@ -1,0 +1,12 @@
+package com.revature;
+
+public class Q3 {
+	
+	public String reverse(String s){
+		Char newString;
+		for (int i; s.length(); ++i) {
+			newString
+		}
+	}
+
+}

@@ -1,0 +1,29 @@
+package com.revature;
+
+public class Q5 {
+	
+	public String substringUntilIndex(String s, int index) {
+
+		if (index < 0) {
+			return "Error: The index is smaller than zero";
+		} else if (index >= s.length()) { 
+			return s;
+		} else {
+			
+			switch(index) {
+			case 0: System.out.println("Showing the substring of " + s + " from its first until its " + index + "st character");
+			        break;
+			case 1: System.out.println("Showing the substring of " + s + " from its first until its " + index + "nd character");
+	        		break;
+			default: System.out.println("Showing the substring of " + s + " from its first until its " + index + "th character");
+			}
+			
+			String substringUntilIndex = "";
+			for (int i=0; i<index; ++i) {
+				substringUntilIndex = substringUntilIndex + s.indexOf(i);
+			};
+			return substringUntilIndex;
+		}
+	}
+	
+}

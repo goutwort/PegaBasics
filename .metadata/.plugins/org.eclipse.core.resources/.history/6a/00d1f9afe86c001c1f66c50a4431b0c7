@@ -1,0 +1,39 @@
+package com.revature;
+
+public class Driver {
+	public static void main(String[] args) {
+		
+		Integer[] numberList = new Integer[10];
+		
+		numnberList[1] = 1;
+		numnberList[1] = 0;
+	    numnberList[1] = 5;	
+	    numnberList[1] = 6;	
+	    numnberList[1] = 3;	
+	    numnberList[1] = 2;	
+	    numnberList[1] = 3;	
+	    numnberList[1] = 7;	
+	    numnberList[1] = 9;	
+	    numnberList[1] = 8;	
+	    numnberList[1] = 4;	
+	    
+	    Q1 q1 = new Q1();
+	    
+	    printNumberList(q1.sort(numberList));
+	    
+	    
+	    Q2 q2 = new Q2();
+	    
+	    printNumberList(q2.fibonacci25());
+		
+		
+	}
+	
+	public static void printNumberList(char[] numberList) {
+		String s = new String(numberList);
+		for (int i=0; i<s.length(); ++i) {
+			System.out.println(numberList[i]);
+		}
+	}
+	
+}

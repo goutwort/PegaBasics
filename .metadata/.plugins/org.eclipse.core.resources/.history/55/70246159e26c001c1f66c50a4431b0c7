@@ -1,0 +1,27 @@
+package com.revature;
+
+public class Driver {
+	public static void main(String[] args) {
+		
+		Integer[] numberList = new Integer[10];
+		
+		numnberList[1] = 1;
+		numnberList[1] = 0;
+	    numnberList[1] = 5;	
+	    numnberList[1] = 6;	
+	    numnberList[1] = 3;	
+	    numnberList[1] = 2;	
+	    numnberList[1] = 3;	
+	    numnberList[1] = 7;	
+	    numnberList[1] = 9;	
+	    numnberList[1] = 8;	
+	    numnberList[1] = 4;	
+	    
+	    Q1 q1 = new Q1();
+	    
+	    q1.sort(numberList);
+	    q1.printNumberList(numberList);
+		
+		
+	}
+}

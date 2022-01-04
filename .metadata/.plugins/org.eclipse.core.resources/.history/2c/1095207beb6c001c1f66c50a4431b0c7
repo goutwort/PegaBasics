@@ -1,0 +1,17 @@
+package com.revature;
+
+public class Q2 {
+	
+	public int[] fibonacci25() {
+	
+		int[] numberList = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+		
+		numberList[0] = '1';
+		numberList[1] = '2';
+		for (int i =0; i<23; ++i) {
+			numberList[i+2] = numberList[i] + numberList[i+1];
+		}
+		
+		return numberList;
+	}
+}

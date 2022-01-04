@@ -1,0 +1,19 @@
+package com.revature;
+
+public class Q5 {
+	
+	public String substringUntilIndex(String s, int index) {
+
+		if (index < 0) {
+			return "Error: The index is smaller than zero";
+		} else if (index >= s.length()) { 
+			return s;
+		} else {
+			String substringUntilIndex = "";
+			for (int i=0; i<index; ++i) {
+				substringUntilIndex = substringUntilIndex + s.indexOf(i);
+			};
+			return substringUntilIndex;
+		}
+	}
+}

@@ -1,0 +1,25 @@
+package com.revature;
+
+public class Q2 {
+	
+	public char[] fibonacci25() {
+	
+		int[] numberList = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+		
+		numberList[0] = 1;
+		numberList[1] = 2;
+		for (int i =0; i<23; ++i) {
+			numberList[i+2] = numberList[i] + numberList[i+1];
+		}
+		
+		String s = "";
+		
+		for (int i =0; i<25; ++i) {
+			s = s + String.valueOf(numberList[i]);
+		}
+		
+		char[] numberListChar = s.toCharArray();
+		
+		return numberListChar;
+	}
+}

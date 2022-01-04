@@ -1,0 +1,18 @@
+package com.revature;
+
+public class Q4 {
+	
+	public int factorial(int number) {
+		System.out.println("Showing the factorial of " + number);
+		int factorial=1;
+		switch(number) {
+		case 0: System.out.println("There is no factorial of negative numbers"); factorial=0; break;
+		default: for (int i=1; i<=number;i++) {
+			   System.out.println(factorial);
+				factorial = factorial*i;
+			}
+		}
+		return factorial;
+	}
+
+}

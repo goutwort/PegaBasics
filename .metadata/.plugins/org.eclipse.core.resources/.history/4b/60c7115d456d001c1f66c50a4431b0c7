@@ -1,0 +1,15 @@
+package com.revature;
+
+public class Q3 {
+	
+	public String reverse(String s){
+		char[] oldChars = s.toCharArray();
+		char[] newChars = new char[s.length()];
+		for (int i=0; i<s.length()/2; ++i) {
+			char dummy = oldChars[i];
+			newChars[i] = oldChars[s.length()-i];
+			newChars[s.length()-i] = dummy;
+		}
+		return newChars.toString();
+	}
+}

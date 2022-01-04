@@ -1,0 +1,20 @@
+package com.revature;
+
+public class Q3 {
+	
+	public String reverse(String s){
+		System.out.println("Reversing the string " + "\"" + s + "\"");
+		char[] oldChars, newChars = s.toCharArray();
+
+		int i=0;
+		do {
+			char dummy = oldChars[i];
+			newChars[i] = oldChars[s.length()-i];
+			newChars[s.length()-i] = dummy;
+			System.out.println("Index:" + i);
+			++i;
+		} while (i< s.length()-i);
+		
+		return newChars.toString();
+	}
+}
